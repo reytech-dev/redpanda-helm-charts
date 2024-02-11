@@ -39,7 +39,6 @@ metadata:
 {{- end }}
 spec:
   selfSigned: {}
-{{- end }}
 ---
 # This is the self-signed CA used to issue certs
 apiVersion: cert-manager.io/v1
@@ -78,5 +77,6 @@ spec:
     kind: Issuer
     group: cert-manager.io
       {{- end }}
+  {{- end }}
   {{- end }}
 {{- end }}
